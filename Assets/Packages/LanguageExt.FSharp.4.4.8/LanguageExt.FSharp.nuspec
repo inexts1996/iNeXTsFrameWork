@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>LanguageExt.FSharp</id>
+    <version>4.4.8</version>
+    <title>LanguageExt.FSharp</title>
+    <authors>Paul Louth</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>lang-ext-small.png</icon>
+    <projectUrl>https://github.com/louthy/language-ext</projectUrl>
+    <description>Helper library for LanguageExt.Core that facilitates conversion between F# native types like Option, Map, List, etc to .NET and Language Ext types.</description>
+    <copyright>Copyright (c) Paul Louth. All rights reserved.</copyright>
+    <tags>C#, Functional, Language Extension, Monad, Option, Either, Reader, Writer, State, List, Set, Map, Queue, Memo, Memoization, Immutable, Lambda, Pattern Matching, Tuple</tags>
+    <repository type="git" commit="e1616d60b93e5fe6e120a9363926de0adda92974" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="LanguageExt.Core" version="4.4.8" exclude="Build,Analyzers" />
+        <dependency id="FSharp.Core" version="7.0.200" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

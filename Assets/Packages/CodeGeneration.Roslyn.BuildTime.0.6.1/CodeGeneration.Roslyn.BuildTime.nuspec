@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+  <metadata minClientVersion="2.5">
+    <id>CodeGeneration.Roslyn.BuildTime</id>
+    <version>0.6.1</version>
+    <authors>Andrew Arnott</authors>
+    <owners>Andrew Arnott</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <projectUrl>https://github.com/aarnott/CodeGeneration.Roslyn</projectUrl>
+    <description>The build-time development dependency that generates code for a project that consumes code generation attributes.</description>
+    <copyright>Copyright © Andrew Arnott</copyright>
+    <repository type="git" url="https://github.com/aarnott/CodeGeneration.Roslyn" />
+    <dependencies>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETPortable0.0-Profile259" />
+      <group targetFramework=".NETPortable0.0-Profile92" />
+      <group targetFramework=".NETStandard1.0" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>CodeGeneration.Roslyn</id>
+    <version>0.6.1</version>
+    <authors>Andrew Arnott</authors>
+    <owners>Andrew Arnott</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/aarnott/CodeGeneration.Roslyn</projectUrl>
+    <description>A package that offers libraries for creating a code generation attribute and the associated generator.</description>
+    <copyright>Copyright © Andrew Arnott</copyright>
+    <repository type="git" url="https://github.com/aarnott/CodeGeneration.Roslyn" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="CodeGeneration.Roslyn.Attributes" version="0.6.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CodeAnalysis.CSharp" version="[3.1.0]" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

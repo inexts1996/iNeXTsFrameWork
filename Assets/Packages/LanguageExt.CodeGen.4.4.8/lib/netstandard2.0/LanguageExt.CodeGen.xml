@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LanguageExt.CodeGen</name>
+    </assembly>
+    <members>
+        <member name="T:LanguageExt.CodeGen.CodeGenUtil">
+            <summary>
+            TODO: Split this up into more behaviour specific functions
+            </summary>
+        </member>
+        <member name="M:LanguageExt.CodeGen.CodeGenUtil.MakeCaseType(CodeGeneration.Roslyn.TransformationContext,System.IProgress{Microsoft.CodeAnalysis.Diagnostic},Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxList{Microsoft.CodeAnalysis.CSharp.Syntax.MemberDeclarationSyntax},Microsoft.CodeAnalysis.CSharp.Syntax.TypeParameterListSyntax,Microsoft.CodeAnalysis.SyntaxTokenList,Microsoft.CodeAnalysis.SyntaxList{Microsoft.CodeAnalysis.CSharp.Syntax.TypeParameterConstraintClauseSyntax},Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.CSharp.Syntax.TypeParameterListSyntax,System.Collections.Generic.List{System.ValueTuple{Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.CSharp.Syntax.TypeSyntax,Microsoft.CodeAnalysis.SyntaxTokenList,Microsoft.CodeAnalysis.SyntaxList{Microsoft.CodeAnalysis.CSharp.Syntax.AttributeListSyntax}}},LanguageExt.CodeGen.BaseSpec,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            Makes a case class
+            This can be a case within a union, or a standalone record (which can be seen as a union 
+            type with 1 case)
+            
+            In the parameter list, below, anything prefixed with `applyTo` represents either the record-type
+            or the union-type (not the case).  Anything prefixed with `case` contains information relating to
+            the case, which for record types is also the record.
+            
+            </summary>
+        </member>
+        <member name="T:LanguageExt.CodeGen.ReaderGenerator">
+            <summary>
+            Reader Generator
+            </summary>
+        </member>
+        <member name="M:LanguageExt.CodeGen.ReaderGenerator.#ctor(Microsoft.CodeAnalysis.AttributeData)">
+            <summary>
+            Provides a With function for record types
+            </summary>
+        </member>
+        <member name="T:LanguageExt.CodeGen.RecordWithGenerator">
+            <summary>
+            Provides a With function for record types
+            </summary>
+        </member>
+        <member name="M:LanguageExt.CodeGen.RecordWithGenerator.#ctor(Microsoft.CodeAnalysis.AttributeData)">
+            <summary>
+            Provides a With function for record types
+            </summary>
+        </member>
+        <member name="T:LanguageExt.CodeGen.RecordWithAndLensGenerator">
+            <summary>
+            Provides a With function and lens fields for record types
+            </summary>
+        </member>
+        <member name="M:LanguageExt.CodeGen.RecordWithAndLensGenerator.#ctor(Microsoft.CodeAnalysis.AttributeData)">
+            <summary>
+            Provides a With function and lens fields for record types
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:LanguageExt.CodeGen.RWSGenerator" -->
+        <member name="M:LanguageExt.CodeGen.RWSGenerator.#ctor(Microsoft.CodeAnalysis.AttributeData)">
+            <summary>
+            Provides a With function for record types
+            </summary>
+        </member>
+        <member name="T:LanguageExt.FreeAttribute">
+            <summary>
+            Union attribute
+            </summary>
+        </member>
+        <member name="M:LanguageExt.ReaderAttribute.#ctor(System.Type,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="Env">Reader environment type</param>
+            <param name="Constructor">Optional name for the function that will construct the new monad</param>
+            <param name="Fail">Optional name for the function that will represent the fail state for the new monad</param>
+        </member>
+        <member name="T:LanguageExt.RecordAttribute">
+            <summary>
+            Union attribute
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:LanguageExt.RWSAttribute.#ctor(System.Type,System.Type,System.String,System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:LanguageExt.RWSAttribute.#ctor(System.Type,System.Type,System.Type,System.String,System.String)" -->
+        <member name="T:LanguageExt.UnionAttribute">
+            <summary>
+            Union attribute
+            </summary>
+        </member>
+        <member name="T:LanguageExt.WithAttribute">
+            <summary>
+            With attribute which tells the LanguageExt.CodeGen to provide a With function for all 
+            public readonly fields in a type
+            </summary>
+        </member>
+        <member name="T:LanguageExt.WithLensAttribute">
+            <summary>
+            With attribute which tells the LanguageExt.CodeGen to provide a With function for all 
+            public readonly fields in a type and a set of static lens fields that share the field 
+            name with a lower-case letter (so Name and Surname become name and surname) for easy
+            bidirectional immutable transformations. 
+            </summary>
+        </member>
+    </members>
+</doc>

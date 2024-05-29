@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>CodeGeneration.Roslyn.Attributes</id>
+    <version>0.6.1</version>
+    <authors>Andrew Arnott</authors>
+    <owners>Andrew Arnott</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/aarnott/CodeGeneration.Roslyn</projectUrl>
+    <description>A package that offers attributes to drive code generation.</description>
+    <copyright>Copyright © Andrew Arnott</copyright>
+    <repository type="git" url="https://github.com/aarnott/CodeGeneration.Roslyn" />
+    <dependencies>
+      <group targetFramework=".NETFramework2.0" />
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETPortable0.0-Profile259" />
+      <group targetFramework=".NETPortable0.0-Profile92" />
+      <group targetFramework=".NETStandard1.0">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

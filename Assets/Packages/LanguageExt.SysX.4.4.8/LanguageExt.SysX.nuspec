@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>LanguageExt.SysX</id>
+    <version>4.4.8</version>
+    <title>LanguageExt.SysX</title>
+    <authors>Paul Louth</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>lang-ext-small.png</icon>
+    <projectUrl>https://github.com/louthy/language-ext</projectUrl>
+    <description>Extensions to language-ext effects system that wraps .NET5+ specific IO from the .NET BCL</description>
+    <copyright>Copyright (c) Paul Louth. All rights reserved.</copyright>
+    <tags>C#, Functional, Language Extension, Aff, Eff, Monad, Option, Either, Reader, Writer, State, List, Set, Map, Queue, Memo, Memoization, Immutable, Lambda, Pattern Matching, Tuple</tags>
+    <repository type="git" commit="e1616d60b93e5fe6e120a9363926de0adda92974" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="LanguageExt.Core" version="4.4.8" exclude="Build,Analyzers" />
+        <dependency id="LanguageExt.Sys" version="4.4.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

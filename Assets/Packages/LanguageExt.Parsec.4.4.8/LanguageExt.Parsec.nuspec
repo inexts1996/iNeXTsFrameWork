@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>LanguageExt.Parsec</id>
+    <version>4.4.8</version>
+    <title>LanguageExt.Parsec</title>
+    <authors>Paul Louth</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>lang-ext-small.png</icon>
+    <projectUrl>https://github.com/louthy/language-ext</projectUrl>
+    <description>Parser combinators library based on Haskell Parsec.  This is part of the LanguageExt functional base class library and requires LanguageExt.Core</description>
+    <copyright>Copyright (c) Paul Louth. All rights reserved.</copyright>
+    <tags>C#, Functional, Language Extension, Monad, Option, Either, Reader, Writer, State, List, Set, Map, Queue, Memo, Memoization, Immutable, Lambda, Pattern Matching, Tuple</tags>
+    <repository type="git" commit="e1616d60b93e5fe6e120a9363926de0adda92974" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="LanguageExt.Core" version="4.4.8" exclude="Build,Analyzers" />
+        <dependency id="System.ValueTuple" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
